@@ -1,0 +1,456 @@
+/* REMOVES BROWSER DEFAULT STYLES */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+/* general styles */
+*{
+    color: white;
+}
+body{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 97vw;
+    background-color: rgb(0, 85, 119);
+    font-size: 1.2rem;
+    color: white;
+}
+section{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    min-height: 300px;
+    
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+
+
+/*     header style      */
+/* header *{
+    border: solid yellow 3px;
+} */
+header{
+    width: 100vw;
+    height: 60px;
+    background: black;
+    border-bottom: solid 3px white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0px 5px 15px black;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+#headerLogoContainer{
+    height: 150px;
+    width: 200px;
+    margin-bottom: -75px;
+    margin-top: 25px;
+}
+#logo{
+    height: inherit;
+    width: inherit; 
+    margin-right: 25px;
+}
+#navList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75vw;
+}
+#navList li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 1.5rem; 
+    font-weight: 700;
+}
+#navList a{
+    text-decoration: none;
+    margin: 5px;
+}
+#facebook{
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+
+/* footer style */
+footer{
+    font-size: .8rem;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px 0px 25px;
+
+}
+
+
+
+/* landing page styles */
+
+#landingPageBody{
+    background: linear-gradient(-135deg, rgba(63,87,117, 0.7), rgba(0, 0, 0, 0.7), rgba(63, 87, 117, 0.7)), url("images/bowl.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#landingPageMain {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+
+}
+
+.logoAndSlogan{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: ridge 20px rgb(63,87,117);
+    background: rgba(167,23,37,255);
+    padding: 25px; 
+    z-index: 1; 
+}
+.logoAndSlogan img{
+    height: 300px;
+    width: 400px;
+}
+.sloganBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sloganBox h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-weight: 800px;
+}
+
+.hours, .containerForSomething, .logoAndSlogan{
+    box-shadow: 0px 5px 15px black;
+}
+
+.hours, .containerForSomething{
+    height: 369px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4mm ridge rgba(167,23,37,255);
+    background: rgba(63, 87, 117, 0.815);
+
+}
+
+.hours{
+    margin-right: -70px;
+    overflow: hidden;
+}
+.hours h3{
+    color: white;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 20px 75px 20px 0px;
+}
+.hoursTable{
+    width: 100%;
+    height: 300px; 
+}
+.hoursTable div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;  
+    border-bottom: dashed 3px black;
+
+}
+div.lastItem{
+    border-bottom: none;
+    padding-bottom: 8px;
+}
+.hoursTable div p{
+    width: 33%;
+    font-size: 1.2rem;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.containerForSomething{
+    margin-left: -75px;
+}
+.bowlingInfo{
+    padding-left: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: inherit;
+
+
+}
+
+
+
+/* #activities *{
+    border: solid orange 1px;
+} */
+#activities{
+    background: rgba(63, 87, 117, 0.726);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;;
+}
+.headingContainer{
+    width: 100vw;
+    margin: 50px 0px;
+    
+}
+.headingContainer h2{
+    text-align: center;
+}
+#theActiviesContainter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    border: 3px solid black;
+    box-shadow: 0px 5px 15px black;
+    overflow: hidden;
+}
+#bowlingLandingBox{
+    background: linear-gradient(-135deg, rgba(63,87,117, 0.7), rgba(0, 0, 0, 0.7), rgba(63, 87, 117, 0.7)), url("images/marc-mueller-lwTSdfXfskE-unsplash.jpg");
+}
+#arcadeLandingBox{
+    background: linear-gradient(-135deg, rgba(63,87,117, 0.7), rgba(0, 0, 0, 0.7), rgba(63, 87, 117, 0.7)), url("images/benjamin-szabo-QVN5ydW0k1k-unsplash.jpg");
+}
+#laserTagLandingBox{
+    background: linear-gradient(-135deg, rgba(63,87,117, 0.7), rgba(0, 0, 0, 0.7), rgba(63, 87, 117, 0.7)), url("images/leonardo-sanches-ttgvum3OWII-unsplash.jpg");
+}
+#bowlingLandingBox, #arcadeLandingBox, #laserTagLandingBox{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 34%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+
+#food{
+    background: url(images/foodSectionBackground.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.opacity, #food{
+    height: 50vh;
+    width: 100vw;
+}
+.opacity{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.landingPageFoodInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.landingPageFoodInfo p{
+    width: 25%;
+    text-align: center;
+    padding: 25px 0px 0px 0px;
+}
+
+
+button{
+    color: black;
+}
+
+
+
+
+
+/*  the alleyway cafe style */
+
+/* #menu *{
+    border: solid 1px purple;
+} */
+
+#menu{
+    margin: 30px;
+    height: auto;
+}
+.menuBox{
+    height: auto;
+    width: 70vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 2px ridge black;
+    padding: 10px;
+}
+#menu h2{
+    width: 100%;
+    padding: 25px 0px;
+    text-align: center;
+}
+
+#snacks{
+    height: inherit;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+}
+.snacksItem{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 5px 0px;
+}
+.noOptions{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.snackOptions{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.snackOptions p{
+    padding: 0px 10px;
+}
+.subSnackItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+#tacoBoat .subSnackItem{
+    padding-left: 0px;
+}
+.subSnackItem div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
